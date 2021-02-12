@@ -9,3 +9,7 @@ export const signupSchema = yup.object({
 	email: yup.string().email('Email must be a valid email').required(),
 	password: yup.string().min(6, 'Pass must be at least 6 characters'),
 });
+
+export const loginSchema = yup.object({
+	email: yup.string().email('Email must be a valid email').required(),
+});
